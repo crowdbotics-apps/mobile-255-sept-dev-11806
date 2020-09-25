@@ -44,3 +44,7 @@ class HGgfkhjfkhg(models.Model):
         null=True,
         blank=True,
     )
+    cvnbdfgbvc = models.PositiveSmallIntegerField(
+        null=True,
+        blank=True,
+    )
