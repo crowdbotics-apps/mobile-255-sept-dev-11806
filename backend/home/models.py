@@ -40,3 +40,7 @@ class HGgfkhjfkhg(models.Model):
     hgjhggjgjhg = models.BigIntegerField(
         blank=True,
     )
+    hgfhgfhgf = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
