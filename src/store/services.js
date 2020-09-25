@@ -29,7 +29,7 @@ const newConnectorhgfghf = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobile255septAPI = axios.create({
-  baseURL: "https://mobile-255-sept-dev-11806-prod.herokuapp.com/",
+  baseURL: "https://mobile-255-sept-dev-11806.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
@@ -43,6 +43,24 @@ function api_v1_customtext_update(requestBody) {
 }
 function api_v1_customtext_partial_update(requestBody) {
   return mobile255septAPI.patch(`/api/v1/customtext/{id}/`, requestBody)
+}
+function api_v1_hggfkhjfkhg_list() {
+  return mobile255septAPI.get(`/api/v1/hggfkhjfkhg/`)
+}
+function api_v1_hggfkhjfkhg_create(requestBody) {
+  return mobile255septAPI.post(`/api/v1/hggfkhjfkhg/`, requestBody)
+}
+function api_v1_hggfkhjfkhg_read() {
+  return mobile255septAPI.get(`/api/v1/hggfkhjfkhg/{id}/`)
+}
+function api_v1_hggfkhjfkhg_update(requestBody) {
+  return mobile255septAPI.put(`/api/v1/hggfkhjfkhg/{id}/`, requestBody)
+}
+function api_v1_hggfkhjfkhg_partial_update(requestBody) {
+  return mobile255septAPI.patch(`/api/v1/hggfkhjfkhg/{id}/`, requestBody)
+}
+function api_v1_hggfkhjfkhg_delete() {
+  return mobile255septAPI.delete(`/api/v1/hggfkhjfkhg/{id}/`)
 }
 function api_v1_homepage_list() {
   return mobile255septAPI.get(`/api/v1/homepage/`)
@@ -106,6 +124,12 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_hggfkhjfkhg_list,
+  api_v1_hggfkhjfkhg_create,
+  api_v1_hggfkhjfkhg_read,
+  api_v1_hggfkhjfkhg_update,
+  api_v1_hggfkhjfkhg_partial_update,
+  api_v1_hggfkhjfkhg_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,
